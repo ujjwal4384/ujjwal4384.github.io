@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Download } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navItems = [
   { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
+  { label: "Projects", href: "#projects" },
   { label: "Education", href: "#education" },
   { label: "Contact", href: "#contact" },
 ];
@@ -44,10 +45,12 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="/Ujjwal_Chitransh_Resume.pdf"
+            href="https://drive.google.com/file/d/1BiPiGFQbk-mqILMVJSC659HSzfAanjGu/view?usp=sharing"
             target="_blank"
-            className="text-sm font-medium px-4 py-2 rounded-lg border border-primary/30 text-primary hover:bg-primary/10 transition-all duration-200"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm font-medium px-4 py-2 rounded-lg border border-primary/30 text-primary hover:bg-primary/10 transition-all duration-200"
           >
+            <Download size={14} />
             Resume
           </a>
         </div>
@@ -80,6 +83,16 @@ const Navbar = () => {
                   {item.label}
                 </a>
               ))}
+              <a
+                href="https://drive.google.com/file/d/1BiPiGFQbk-mqILMVJSC659HSzfAanjGu/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMobileOpen(false)}
+                className="inline-flex items-center gap-2 text-sm font-medium text-primary py-2"
+              >
+                <Download size={14} />
+                Download Resume
+              </a>
             </div>
           </motion.div>
         )}
