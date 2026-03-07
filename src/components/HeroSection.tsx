@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Code2 } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Code2, Download } from "lucide-react";
+import profilePhoto from "@/assets/ujjwal_photograph.jpeg";
 
 const HeroSection = () => {
   return (
@@ -12,6 +13,23 @@ const HeroSection = () => {
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-highlight/5 rounded-full blur-[120px] animate-pulse-glow" style={{ animationDelay: "1.5s" }} />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+        {/* Profile Photo */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="mb-8"
+        >
+          <div className="w-36 h-36 mx-auto rounded-2xl overflow-hidden border-2 border-primary/30 shadow-[0_8px_40px_-8px_hsl(var(--primary)/0.3)]">
+            <img
+              src={profilePhoto}
+              alt="Ujjwal Chitransh - Senior Software Development Engineer"
+              className="w-full h-full object-cover object-top"
+              loading="eager"
+            />
+          </div>
+        </motion.div>
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -27,7 +45,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.35 }}
-          className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] mb-6"
+          className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] mb-4"
         >
           Hi, I'm{" "}
           <span className="text-gradient">Ujjwal Chitransh</span>
@@ -36,10 +54,19 @@ const HeroSection = () => {
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.5 }}
-          className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
+          transition={{ duration: 0.7, delay: 0.42 }}
+          className="text-xl sm:text-2xl font-semibold text-foreground mb-3"
         >
-          Backend Software Development Engineer | Building Scalable FinTech & Product Systems
+          Senior Software Development Engineer
+        </motion.p>
+
+        <motion.p
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.5 }}
+          className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
+        >
+          Building scalable, secured and distributed backend systems—from supporting critical lending infrastructure to AI SEO, stock advisory platforms, and automated gameshows.
         </motion.p>
 
         <motion.div
@@ -49,8 +76,17 @@ const HeroSection = () => {
           className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12"
         >
           <a
+            href="https://drive.google.com/file/d/1BiPiGFQbk-mqILMVJSC659HSzfAanjGu/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-lg bg-primary text-primary-foreground font-semibold text-sm hover:brightness-110 transition-all duration-200 shadow-[0_0_30px_-5px_hsl(var(--primary)/0.4)]"
+          >
+            <Download size={16} />
+            Download Resume
+          </a>
+          <a
             href="#experience"
-            className="px-8 py-3.5 rounded-lg bg-primary text-primary-foreground font-semibold text-sm hover:brightness-110 transition-all duration-200 shadow-[0_0_30px_-5px_hsl(var(--primary)/0.4)]"
+            className="px-8 py-3.5 rounded-lg border border-border text-foreground font-semibold text-sm hover:border-primary/50 hover:text-primary transition-all duration-200"
           >
             View Experience
           </a>
