@@ -14,7 +14,7 @@ const experiences: Experience[] = [
   {
     company: "Refyne India",
     role: "SDE-2",
-    period: "April 2024 — Present",
+    period: "April 2025 — Present",
     tag: "FinTech · LinkedIn Top Startups",
     bullets: [
       "Built payout integrations (Razorpay, Easebuzz, Cashfree) in a span of 3 weeks, supporting 10L+ daily transactions.",
