@@ -15,9 +15,12 @@ const EducationSection = () => {
             <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
               <GraduationCap className="text-primary" size={24} />
             </div>
+            <Badge className="bg-primary/10 text-primary border-primary/20 hover:bg-primary/15 mb-4 text-[11px]">
+              B.Tech
+            </Badge>
             <h3 className="text-xl font-bold mb-2">Indian Institute of Technology, Roorkee</h3>
             <p className="text-muted-foreground text-sm">
-              B.Tech, ECE
+              Electronics & Communication Engineering
             </p>
             <p className="text-sm font-semibold text-foreground mt-2">CGPA: 8.752</p>
             <p className="text-xs font-mono text-muted-foreground mt-2">Class of 2023</p>
