@@ -26,7 +26,7 @@ const experiences: Experience[] = [
   {
     company: "Rigi",
     role: "Software Development Engineer",
-    period: "April 2023 — April 2024",
+    period: "April 2024 — March 2025",
     tag: "Creator Economy, Stock Advisory Platform",
     bullets: [
       "Developed the backend for Gameshow, contributing to the app reaching 1M DAU within 40 days of launch.",
