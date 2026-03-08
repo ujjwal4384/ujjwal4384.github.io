@@ -20,7 +20,7 @@ const experiences: Experience[] = [
       "Developed payout system supporting multi-vendor integration (Razorpay, Easebuzz, Cashfree), handling 10L+ daily transactions.",
       "Architected core lending underwriting infrastructure in 8 weeks, processing millions of requests per second using decision tree data structures.",
       "Developed transformer pipelines for dynamic business rules and loan term calculations.",
-      "Integrated Account Aggregators (Finarkein, Setu) and Experian credit reports, adhering to RBI guidelines using scalable microservices.",
+      "Designed and developed the Account Aggregator system from scratch using scalable microservices, ensuring strict adherence to RBI compliance for automated loan underwriting.",
     ],
   },
   {
