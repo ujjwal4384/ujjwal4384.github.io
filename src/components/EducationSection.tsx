@@ -18,9 +18,9 @@ const EducationSection = () => {
             <Badge className="bg-primary/10 text-primary border-primary/20 hover:bg-primary/15 mb-4 text-[11px]">
               IIT Roorkee
             </Badge>
-            <h3 className="text-xl font-bold mb-2">B.Tech in Electronics & Communication Engineering</h3>
+            <h3 className="text-xl font-bold mb-2">Indian Institute of Technology, Roorkee</h3>
             <p className="text-muted-foreground text-sm">
-              Indian Institute of Technology, Roorkee
+              B.Tech, ECE
             </p>
             <p className="text-sm font-semibold text-foreground mt-2">CGPA: 8.752</p>
             <p className="text-xs font-mono text-muted-foreground mt-2">Class of 2023</p>
