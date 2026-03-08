@@ -1,5 +1,5 @@
 import AnimatedSection from "./AnimatedSection";
-import { Github, Bot } from "lucide-react";
+import { Github, Bot, Brain, Network } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const projects = [
@@ -11,11 +11,25 @@ const projects = [
     link: "https://github.com/Student-Mentorship-Programme",
   },
   {
-    title: "Agentic AI MCP Weather Assistant",
+    title: "Agentic AI: Weather Assistant",
     description: "A backend AI agent leveraging the Model Context Protocol (MCP) to orchestrate weather data retrieval and intelligent responses via agentic workflows.",
     tags: ["Agentic AI", "MCP", "Python"],
     icon: Bot,
+    link: "https://github.com/ujjwal4384/mcp-weather-assistant",
+  },
+  {
+    title: "Deep Learning Assisted Self-Interference Suppression",
+    description: "Mitigated self-interference in Full-Duplex systems using deep learning based TID method (Time-Invariant non-linear Distortion). IIT Roorkee, Jan–May 2022.",
+    tags: ["Python", "TensorFlow", "DNN", "MATLAB"],
+    icon: Brain,
     link: null,
+  },
+  {
+    title: "Client-Server Communication via TCP/IP",
+    description: "Used socket programming for network relay among server and clients with controllable intake capacity. Implemented synchronized exchange using multi-threading. IIT Roorkee, Dec 2020–Jan 2021.",
+    tags: ["Networking", "Multi-threading", "TCP/IP"],
+    icon: Network,
+    link: "https://github.com/ujjwal4384/NetworkingProject",
   },
 ];
 

@@ -14,6 +14,16 @@ interface Internship {
 
 const internships: Internship[] = [
   {
+    company: "Twilio",
+    role: "Software Development Engineer Intern",
+    period: "May 2022 — July 2022",
+    tag: "Fortune 500",
+    details: [
+      "Executed POC on AWS Glue & used Docker image to run all 3 steps of ETL jobs in AWS Glue environment.",
+      "Performed real-time stateful streaming of data to implement conversation hold-time calculator metric in Python.",
+    ],
+  },
+  {
     company: "Scalenut",
     role: "Software Development Engineer Intern",
     period: "April 2023 — June 2023",
@@ -46,7 +56,7 @@ const InternshipsSection = () => {
           </p>
         </AnimatedSection>
 
-        <div className="grid sm:grid-cols-2 gap-4">
+        <div className="grid sm:grid-cols-3 gap-4">
           {internships.map((intern, i) => (
             <AnimatedSection key={intern.company} delay={i * 0.1}>
               <button
