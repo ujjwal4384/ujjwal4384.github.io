@@ -14,7 +14,7 @@ const experiences: Experience[] = [
   {
     company: "Refyne India",
     role: "SDE-2",
-    period: "April 2024 — Present",
+    period: "April 2025 — Present",
     tag: "FinTech · LinkedIn Top Startups",
     bullets: [
       "Built payout integrations (Razorpay, Easebuzz, Cashfree) in a span of 3 weeks, supporting 10L+ daily transactions.",
@@ -26,7 +26,7 @@ const experiences: Experience[] = [
   {
     company: "Rigi",
     role: "Software Development Engineer",
-    period: "April 2023 — April 2024",
+    period: "April 2024 — March 2025",
     tag: "Creator Economy, Stock Advisory Platform",
     bullets: [
       "Developed the backend for Gameshow, contributing to the app reaching 1M DAU within 40 days of launch.",
