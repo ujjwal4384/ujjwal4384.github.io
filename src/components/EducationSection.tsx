@@ -29,7 +29,13 @@ const EducationSection = () => {
               <p className="text-muted-foreground text-sm">
                 Indian Institute of Technology, Roorkee
               </p>
-              <p className="text-xs font-mono text-muted-foreground mt-3">Class of 2023</p>
+              <p className="text-sm font-semibold text-foreground mt-2">CGPA: 8.752</p>
+              <p className="text-xs font-mono text-muted-foreground mt-2">Class of 2023</p>
+
+              <div className="mt-6 pt-4 border-t border-border">
+                <h4 className="text-sm font-semibold mb-1">Class XII</h4>
+                <p className="text-sm text-muted-foreground">Score: 96%</p>
+              </div>
             </div>
           </AnimatedSection>
 

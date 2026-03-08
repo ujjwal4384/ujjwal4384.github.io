@@ -15,7 +15,7 @@ const experiences: Experience[] = [
     company: "Refyne India",
     role: "SDE-2",
     period: "April 2024 — Present",
-    tag: "FinTech · LinkedIn Top Startup",
+    tag: "FinTech · LinkedIn Top Startups",
     bullets: [
       "Built payout integrations (Razorpay, Easebuzz, Cashfree) in a span of 3 weeks, supporting 10L+ daily transactions.",
       "Architected core lending underwriting infrastructure in 8 weeks, processing millions of requests per second using decision tree data structures.",
@@ -27,6 +27,7 @@ const experiences: Experience[] = [
     company: "Rigi",
     role: "Software Development Engineer",
     period: "April 2023 — April 2024",
+    tag: "Creator Economy, Stock Advisory Platform",
     bullets: [
       "Developed the backend for Gameshow, contributing to the app reaching 1M DAU within 40 days of launch.",
       "Created Sanket, an in-house notification service delivering alert webhooks.",
@@ -37,20 +38,11 @@ const experiences: Experience[] = [
     company: "Scalenut",
     role: "Software Development Engineer",
     period: "June 2023 — April 2024",
+    tag: "AI SEO",
     bullets: [
       "Designed backend for Traffic Analyser module, managing data for 5k+ domains.",
       "Engineered Webtune AI's system architecture for real-time SEO updates.",
       "Star Performer of the Month (September 2023).",
-    ],
-  },
-  {
-    company: "Twilio",
-    role: "Software Development Engineer",
-    period: "May 2022 — July 2022",
-    tag: "Fortune 500",
-    bullets: [
-      "Executed POC on AWS Glue & used Docker image to run all 3 steps of ETL jobs in AWS Glue environment.",
-      "Performed real-time stateful streaming of data to implement conversation hold-time calculator metric in Python.",
     ],
   },
 ];
