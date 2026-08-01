@@ -23,7 +23,7 @@ const HeroSection = () => {
             >
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/20 bg-primary/5 text-primary text-xs font-mono mb-8">
                 <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                IIT Roorkee '23 · Ex-Twilio · FinTech @ Refyne
+                L5 @Amazon · IIT Roorkee · Agentic AI · FinTech
               </div>
             </motion.div>
 
@@ -43,7 +43,7 @@ const HeroSection = () => {
               transition={{ duration: 0.7, delay: 0.42 }}
               className="text-xl sm:text-2xl font-semibold text-foreground mb-3"
             >
-              Senior Software Development Engineer
+              Software Development Engineer
             </motion.p>
 
             <motion.p
