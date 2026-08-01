@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Code2, Download } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Code2, ExternalLink } from "lucide-react";
 import profilePhoto from "@/assets/ujjwal_photograph.jpeg";
 
 const HeroSection = () => {
@@ -52,7 +52,7 @@ const HeroSection = () => {
               transition={{ duration: 0.7, delay: 0.5 }}
               className="text-base sm:text-lg text-muted-foreground max-w-2xl mb-10 leading-relaxed"
             >
-              Building scalable, secured and distributed backend systems—from supporting critical lending infrastructure to AI SEO, stock advisory platforms, and automated gameshows.
+              Building scalable, secure, and distributed backend systems—from supporting critical lending infrastructure to agentic AI workflows, GenAI products, and high-scale platforms.
             </motion.p>
 
             <motion.div
@@ -62,13 +62,13 @@ const HeroSection = () => {
               className="flex flex-col sm:flex-row items-center md:items-start gap-4 mb-12"
             >
               <a
-                href="https://drive.google.com/file/d/1BiPiGFQbk-mqILMVJSC659HSzfAanjGu/view?usp=sharing"
+                href="https://drive.google.com/file/d/1OYVE1iOPKCgJkETiMsv5rS5tTVFWHvrj/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-3.5 rounded-lg bg-primary text-primary-foreground font-semibold text-sm hover:brightness-110 transition-all duration-200 shadow-[0_0_30px_-5px_hsl(var(--primary)/0.4)]"
               >
-                <Download size={16} />
-                Download Resume
+                <ExternalLink size={16} />
+                Open Resume
               </a>
               <a
                 href="#experience"
@@ -116,11 +116,11 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="shrink-0"
           >
-            <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 rounded-2xl overflow-hidden border-2 border-primary/30 shadow-[0_8px_40px_-8px_hsl(var(--primary)/0.3)]">
+            <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 rounded-2xl overflow-hidden border-2 border-primary/30 shadow-[0_8px_40px_-8px_hsl(var(--primary)/0.3)] flex items-center justify-center">
               <img
                 src={profilePhoto}
                 alt="Ujjwal Chitransh - Senior Software Development Engineer"
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-cover object-center"
                 loading="eager"
               />
             </div>

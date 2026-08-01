@@ -18,16 +18,16 @@ const EducationSection = () => {
             <Badge className="bg-primary/10 text-primary border-primary/20 hover:bg-primary/15 mb-4 text-[11px]">
               B.Tech
             </Badge>
-            <h3 className="text-xl font-bold mb-2">Indian Institute of Technology, Roorkee</h3>
+            <h3 className="text-xl font-bold mb-2">IIT Roorkee</h3>
             <p className="text-muted-foreground text-sm">
               Electronics & Communication Engineering
             </p>
-            <p className="text-sm font-semibold text-foreground mt-2">CGPA: 8.752</p>
+            <p className="text-sm font-semibold text-foreground mt-2">CGPA: 8.75</p>
             <p className="text-xs font-mono text-muted-foreground mt-2">Class of 2023</p>
 
             <div className="mt-6 pt-4 border-t border-border">
               <h4 className="text-sm font-semibold mb-1">Class XII</h4>
-              <p className="text-sm text-muted-foreground">Score: 96%</p>
+              <p className="text-sm text-muted-foreground">Score: 96% · District Topper</p>
             </div>
           </div>
         </AnimatedSection>
