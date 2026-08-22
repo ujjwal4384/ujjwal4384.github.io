@@ -3,6 +3,8 @@ import { ArrowDown, Github, Linkedin, Code2, ExternalLink } from "lucide-react";
 import profilePhoto from "@/assets/ujjwal_photograph.jpeg";
 
 const HeroSection = () => {
+  const roleTags = ["L5 @Amazon", "IIT Roorkee", "Agentic AI", "FinTech"];
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background grid */}
@@ -21,9 +23,15 @@ const HeroSection = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
             >
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary text-xs font-mono mb-6">
-                <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                L5 @Amazon · IIT Roorkee · Agentic AI · FinTech
+              <div className="mb-6 flex justify-center md:justify-start">
+                <div className="inline-flex max-w-full flex-wrap items-center justify-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-3 py-1.5 text-primary text-[10px] sm:text-xs font-mono">
+                  <span className="flex h-2 w-2 items-center justify-center rounded-full bg-primary animate-pulse" />
+                  {roleTags.map((tag) => (
+                    <span key={tag} className="whitespace-nowrap">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
             </motion.div>
 
@@ -31,17 +39,17 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.35 }}
-              className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight leading-[1.05] mb-3"
+              className="text-3xl sm:text-4xl md:text-6xl font-bold tracking-tight leading-[1.05] mb-3 break-words"
             >
               Hi, I'm{" "}
-              <span className="text-gradient">Ujjwal Chitransh</span>
+              <span className="text-gradient block sm:inline">Ujjwal Chitransh</span>
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.42 }}
-              className="text-lg sm:text-xl font-semibold text-foreground mb-2"
+              className="text-lg sm:text-xl font-semibold text-foreground mb-2 break-words"
             >
               Software Development Engineer
             </motion.p>
@@ -50,7 +58,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.5 }}
-              className="text-base sm:text-lg text-muted-foreground max-w-full sm:max-w-2xl mb-8 leading-relaxed"
+              className="text-base sm:text-lg text-muted-foreground max-w-full sm:max-w-2xl mb-8 leading-relaxed break-words"
             >
               Building scalable, secure, and distributed backend systems—from supporting critical lending infrastructure to agentic AI workflows, GenAI products, and high-scale platforms.
             </motion.p>
@@ -59,26 +67,26 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.65 }}
-              className="flex flex-col sm:flex-row items-center md:items-start gap-4 mb-8 w-full"
+              className="flex flex-col items-stretch gap-3 sm:flex-row sm:items-center md:items-start mb-8 w-full"
             >
               <a
                 href="https://drive.google.com/file/d/1OYVE1iOPKCgJkETiMsv5rS5tTVFWHvrj/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 sm:px-8 py-3.5 rounded-lg bg-primary text-primary-foreground font-semibold text-sm hover:brightness-110 transition-all duration-200 shadow-[0_0_30px_-5px_hsl(var(--primary)/0.4)] w-full sm:w-auto justify-center"
+                className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 rounded-lg bg-primary text-primary-foreground font-semibold text-sm hover:brightness-110 transition-all duration-200 shadow-[0_0_30px_-5px_hsl(var(--primary)/0.4)] w-full sm:w-auto"
               >
                 <ExternalLink size={16} />
                 Open Resume
               </a>
               <a
                 href="#experience"
-                className="mt-3 sm:mt-0 px-6 sm:px-8 py-3.5 rounded-lg border border-border text-foreground font-semibold text-sm hover:border-primary/50 hover:text-primary transition-all duration-200 w-full sm:w-auto text-center"
+                className="px-6 sm:px-8 py-3.5 rounded-lg border border-border text-foreground font-semibold text-sm hover:border-primary/50 hover:text-primary transition-all duration-200 w-full sm:w-auto text-center"
               >
                 View Experience
               </a>
               <a
                 href="#contact"
-                className="mt-3 sm:mt-0 px-6 sm:px-8 py-3.5 rounded-lg border border-border text-foreground font-semibold text-sm hover:border-primary/50 hover:text-primary transition-all duration-200 w-full sm:w-auto text-center"
+                className="px-6 sm:px-8 py-3.5 rounded-lg border border-border text-foreground font-semibold text-sm hover:border-primary/50 hover:text-primary transition-all duration-200 w-full sm:w-auto text-center"
               >
                 Contact Me
               </a>
